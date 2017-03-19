@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        //// TODO: 17/3/5 添加单击事件
         Item item = (Item) parent.getItemAtPosition(position);
         Intent intent = new Intent(this, DetailActivity.class);
         intent.putExtra(DetailActivity.PARAM_ID, item.getId());
@@ -78,7 +77,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 //            } catch (MalformedURLException e) {
 //                e.printStackTrace();
 //            }
-            //// TODO: 17/3/18 扩展imageview
             Glide.with(MainActivity.this).load(getItem(position).getThumbnailUrl()).into(viewHolder.imageView);
 //            viewHolder.imageView.setImageBitmap(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
 //            Log.i("imagesize", "widthSize:----->" + viewHolder.imageView.getMeasuredWidth());
