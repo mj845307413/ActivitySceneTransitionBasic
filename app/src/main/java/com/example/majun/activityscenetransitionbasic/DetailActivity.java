@@ -5,6 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.view.ViewCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.transition.Transition;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -13,6 +14,7 @@ import com.bumptech.glide.Glide;
 
 /**
  * Created by majun on 17/3/19.
+ * 普通的activity是默认不带actionbar的
  */
 public class DetailActivity extends Activity {
     public static final String PARAM_ID = "param_id";
