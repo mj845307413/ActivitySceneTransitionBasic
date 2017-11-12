@@ -17,6 +17,10 @@
 
 
 
+
+
+
+
         android:id="@+id/full_screen"
         android:title="@string/sample_action"
         app:showAsAction="never" />
